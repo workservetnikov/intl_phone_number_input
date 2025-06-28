@@ -348,7 +348,7 @@ class SelectorButton extends StatelessWidget {
                     : 12,
               ),
             ),
-        style: config.hintStyle ??
+        style: config.textStyle ??
             TextStyle(
               fontSize: 16,
               color: config.primaryTextColor ??

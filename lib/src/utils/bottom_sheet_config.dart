@@ -56,6 +56,9 @@ class BottomSheetConfig {
   /// Search field text style
   final TextStyle? hintStyle;
 
+  /// Search field hint text style
+  final TextStyle? textStyle;
+
   /// Search field decoration
   final InputDecoration? searchFieldDecoration;
 
@@ -104,6 +107,7 @@ class BottomSheetConfig {
     this.headerSubtitleTextStyle,
     this.dividerColor,
     this.prefixIconColor,
+    this.textStyle,
   });
 
   /// Creates a copy of this config with the given fields replaced with new values
@@ -131,6 +135,7 @@ class BottomSheetConfig {
     Widget? customHeader,
     Color? dividerColor,
     Color? prefixIconColor,
+    TextStyle? textStyle,
     Widget Function(BuildContext context, dynamic country, bool isSelected)?
         customItemBuilder,
   }) {
@@ -162,6 +167,7 @@ class BottomSheetConfig {
           headerSubtitleTextStyle ?? this.headerSubtitleTextStyle,
       dividerColor: dividerColor ?? this.dividerColor,
       prefixIconColor: prefixIconColor ?? this.prefixIconColor,
+      textStyle: textStyle ?? this.textStyle,
     );
   }
 }
